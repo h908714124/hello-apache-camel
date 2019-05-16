@@ -4,3 +4,5 @@
 *.edited
 *.orig
 *~
+/.gradle/
+/build

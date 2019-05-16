@@ -1,0 +1,23 @@
+plugins {
+	id 'application'
+}
+
+mainClassName = "com.camel.CamelHelloWorldTimerExample"
+
+repositories {
+	mavenCentral()
+}
+
+def camelVersion = "2.24.0"
+
+dependencies {
+	testImplementation "org.junit.jupiter:junit-jupiter:5.5.0-M1"	
+	implementation "org.apache.camel:camel-core:$camelVersion"
+	implementation "org.apache.camel:camel-stream:$camelVersion"
+	implementation "org.apache.camel:camel-jms:$camelVersion"
+	implementation "org.apache.activemq:activemq-camel:5.15.9"
+}
+
+test {
+	useJUnitPlatform()
+}

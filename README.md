@@ -1,1 +1,5 @@
-# hello-apache-camel
+### hello-apache-camel
+
+````sh
+gradle run
+````
